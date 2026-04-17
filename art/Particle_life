@@ -3,11 +3,10 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
 N = 400
-NUM_COLORS = 2
-COLORS = ['#e74c3c', '#3498db']
+NUM_COLORS = 4
+COLORS = ['#e74c3c', '#3498db', '#2ecc71', '#f39c12']
 attraction = np.random.uniform(-1, 1, (NUM_COLORS, NUM_COLORS))
-attraction[0, 1] =  0.9 
-attraction[1, 0] = -0.9 
+
 SPEED    = 0.0002
 FRICTION = 0.85
 FPS_MS   = 40
